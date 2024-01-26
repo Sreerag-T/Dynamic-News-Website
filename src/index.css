@@ -1,13 +1,79 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*header*/
+.header {
+  width: 100%;
+  height: 87px;
+  background-color: rgb(190, 188, 188);
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  margin-left: 19px;
+  margin-top: 17px;
+  margin-bottom: 10px;
+  width: 188px;
+}
+.input {
+  height: 35px;
+  width: 200px;
+  margin-right: 82px;
+  margin-top: 25px;
+  border-radius: 10px;
+  border: 0px solid;
+  border-color: rgb(152, 185, 152);
+}
+.news-image {
+  height: 248px;
+  width: 102%;
+  background-image: url("https://img.freepik.com/premium-photo/creative-glowing-blue-breaking-news-pattern-background-with-globe-headline-communication-global-world-concept-3d-rendering_670147-21161.jpg");
+  margin-left: -3px;
+  margin-top: -1px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  page-break-after: auto;
+}
+.news-image img {
+  height: 248px;
+  width: 102%;
+  overflow: hidden;
+  display: block;
+  page-break-after: auto;
+}
+/*news article*/
+.news {
+  width: 22%;
+  height: 385px;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.news-article {
+  background-color: lightgray;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  column-gap: 4%;
+  height: 100%;
+  flex-wrap: wrap;
+  row-gap: 24px;
+}
+.text {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.source {
+  display: flex;
+  justify-content: space-between;
+  color: grey;
 }
